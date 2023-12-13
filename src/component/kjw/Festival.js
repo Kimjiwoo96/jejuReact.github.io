@@ -6,6 +6,10 @@ function Festival(commonData){
                     <img src={el.img} alt={`Festival ${idx}`}/>
                     <h5>{el.festivalNm}</h5>
                     <p>{el.festivalCon}</p>              
+
+
+
+                    
                     <span>{el.festivalDate}</span> ~ <span>{el.festivalTo}</span>
                 </div>
             ))}
