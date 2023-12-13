@@ -1,0 +1,21 @@
+{
+    "formApply" : [
+        {
+            "applyId" : "",
+            "applyName" : "",
+            "applyTel" : "",
+            "applyEmail" : ""
+        }
+        
+    ],
+    "jejuComments" : [
+        {
+            "commentsId" : "",
+            "commentsName" : "",
+            "commentsEmail": "",
+            "commentsContents" :"",
+            "commentsDate":"",
+            "commentsLike":""
+        }
+    ]
+}
