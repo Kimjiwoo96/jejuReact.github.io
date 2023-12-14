@@ -5,7 +5,7 @@ import {festivalObj , tourisObj} from "./js/commonData"
 
 //bine 작업
 import Hd from "./component/bine/Hd"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
