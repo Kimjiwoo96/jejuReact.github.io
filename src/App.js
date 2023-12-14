@@ -1,6 +1,10 @@
-import Maintext from "./component/kjw/Maintext";
+// module
+
+
+// 파일 import
+import {festivalObj , tourisObj ,eventObj} from "./js/commonData"
 import Festival_P from "./pages/Festival_P";
-import {festivalObj , tourisObj} from "./js/commonData"
+import Event_P from "./pages/Event_P";
 
 
 function App() {
@@ -12,6 +16,9 @@ function App() {
       <Festival_P
         commonData={festivalObj}
       ></Festival_P>
+      <Event_P
+        Eventdata={eventObj}
+      ></Event_P>
     </div>
   );
 }
