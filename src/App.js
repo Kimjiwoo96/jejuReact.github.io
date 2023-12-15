@@ -18,7 +18,7 @@ function App() {
 
     <>
       <Hd></Hd>
-      <MainBanner info={db.swiperMain}></MainBanner>
+      <MainBanner datasrc={db.swiperMain}></MainBanner>
 
 
       <div id="App" style={wrap}>

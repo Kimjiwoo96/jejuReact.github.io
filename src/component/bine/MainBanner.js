@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination } from "swiper";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-export default function SliderContainer(props) {
+function MainBanner(props) {
 
   return (
     <>
@@ -24,12 +24,14 @@ export default function SliderContainer(props) {
 
       >
         {
-          props.info.swiperMain.map((v, i) => {
+          props.datasrc.swiperMain.map((v, i) => {
             return (
-              <SwiperSlide key={i}>
+              <SwiperSlide
+                style={{ background: `url(${v.backgroundIamge})` }}
+                key={i}>
                 <div>
-                  <h2></h2>
-                  <p></p>
+                  <h2>{v.h2}</h2>
+                  <p>{v.p}</p>
                 </div>
               </SwiperSlide>
             );
@@ -38,3 +40,5 @@ export default function SliderContainer(props) {
     </>
   );
 }
+
+export default MainBanner;
