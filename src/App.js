@@ -5,6 +5,7 @@
 import {festivalObj , tourisObj ,eventObj} from "./js/commonData"
 import Festival_P from "./pages/Festival_P";
 import Event_P from "./pages/Event_P";
+import Video_P from "./pages/Video_p"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Festival_P
         commonData={festivalObj}
       ></Festival_P>
+      <Video_P></Video_P>
       <Event_P
         Eventdata={eventObj}
       ></Event_P>
