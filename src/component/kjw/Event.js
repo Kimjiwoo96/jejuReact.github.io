@@ -7,22 +7,6 @@ import EventStyles from "../../scss/kjw/Event.module.scss";
 function Event(Eventdata){
 
     const [isHovering, setIsHovering] = useState(0);
-    const [mythis, setmyThis] = useState("");
-
-    let colors =""
-    if(isHovering == 1){
-        colors = "3px solid #0675C1";
-    }
-    if(isHovering == 2){
-        colors = "3px solid #D48121";
-    }
-    if(isHovering == 3){
-        colors = "3px solid #EBEBEB";
-    }
-    if(isHovering == 4){
-        colors = "3px solid #059B84";
-    }
-
     console.log("이거야>>>>>",isHovering)
 
 
@@ -33,12 +17,9 @@ function Event(Eventdata){
         <div className={EventStyles.eventWrap}>
              {
                 Eventdata.Eventdata.Eventdata.map((el,idx) => {
-
-
                     return(
                     <div 
-                    style={{border:`${colors}`}}
-                    className={EventStyles.innerDiv}
+                    className={`${EventStyles.innerDiv} hoverStyle${idx+1}`}
                     key={`event ${idx}`}
                     onMouseOver={() => setIsHovering(idx+1)}
                     onMouseOut={() => setIsHovering(0)}
