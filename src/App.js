@@ -1,30 +1,31 @@
 import Maintext from "./component/kjw/Maintext";
 import Festival_P from "./pages/Festival_P";
-import {festivalObj , tourisObj} from "./js/commonData"
+import { festivalObj, tourisObj } from "./js/commonData"
 
 
 //bine 작업
-import Hd from "./component/bine/Hd"
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Hd from "./component/bine/Hd"
+import MainBanner from "./component/bine/MainBanner"
+import db from "./data/datas.json"
 
 function App() {
 
-  const wrap ={border:"1px solid red", boxSizing:"border-box",width:"1280px",margin:"0 auto"}
+  const wrap = { border: "1px solid red", boxSizing: "border-box", width: "1280px", margin: "0 auto" }
 
   return (
 
 
     <>
-    <Hd></Hd>
-   
+      <Hd></Hd>
+      <MainBanner info={db.swiperMain}></MainBanner>
 
 
-    <div id="App" style={wrap}>
-      <Festival_P
-        commonData={festivalObj}
-      ></Festival_P>
-    </div>
+      <div id="App" style={wrap}>
+        <Festival_P
+          commonData={festivalObj}
+        ></Festival_P>
+      </div>
 
     </>
   );

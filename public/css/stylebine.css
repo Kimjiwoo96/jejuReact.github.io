@@ -36,18 +36,19 @@ li {
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
-  
+
 }
 
 #gnbs a {
-  
+
   line-height: 100px;
   position: relative;
-  font-family: 'GmarketSansMedium'!important;
+  font-family: 'GmarketSansMedium' !important;
   font-size: 20px;
   padding: 0 10px;
   text-decoration: none;
   color: #222;
+  padding-right: 0;
 
 }
 
@@ -70,3 +71,15 @@ li {
   width: 100%;
 }
 
+/* 모바일버전 */
+
+@media screen and (max-width: 768px) {
+
+  #hd {}
+
+  #gnbs {
+   
+   a{display: none;}
+  
+  }
+}
