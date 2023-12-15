@@ -1,10 +1,14 @@
+import Maintext from "../component/kjw/Maintext";
 
-function place_P(){
+
+function Place_P(){
     return(
         <>
-
+            <Maintext
+                title="이런 명소 어떠세요?"
+            ></Maintext>
         </>
     );
 }
 
-export default place_P;
+export default Place_P;
