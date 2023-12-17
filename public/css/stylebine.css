@@ -71,15 +71,141 @@ li {
   width: 100%;
 }
 
-/* 모바일버전 */
+/* 메인 슬라이드 배너 */
 
-@media screen and (max-width: 768px) {
+#mainbanner .swiper-slide {
+  height: 0;
+  padding-top: 41%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
-  #hd {}
 
-  #gnbs {
-   
-   a{display: none;}
-  
+#mainbanner .bg1 {
+  background-image: url(../img/main/mainbanner1.jpg);
+}
+
+#mainbanner .bg2 {
+  background-image: url(../img/main/mainbanner2.jpg);
+}
+
+#mainbanner .bg3 {
+  background-image: url(../img/main/mainbanner3.jpg);
+}
+
+#mainbanner .bg4 {
+  background-image: url(../img/main/mainbanner4.jpg);
+}
+
+.p-unset {
+  position: unset !important;
+}
+
+.w-auto {
+  width: auto !important
+}
+
+#mainbanner .btns {
+
+  bottom: 180px;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.btns .swiper-pagination {
+  align-items: center;
+  margin-right: 1rem;
+}
+
+#mainbanner .btns .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 50px;
+  margin: 0;
+  position: relative;
+  height: 10px;
+  opacity: 1;
+  background-color: transparent;
+}
+
+#mainbanner .btns .swiper-pagination-bullet::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  background-color: white;
+}
+
+
+#mainbanner .btns .swiper-pagination-bullet-active {
+  background-color: transparent;
+}
+
+#mainbanner .btns .swiper-pagination-bullet-active::before {
+  height: 3px;
+}
+
+#mainbanner .swiper-button-next,
+#mainbanner .swiper-button-prev {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 4px 10px;
+
+}
+
+#mainbanner .swiper-button-next:after,
+#mainbanner .swiper-button-prev:after {
+  color: white;
+  font-size: 18px;
+}
+
+/*  타이틀  */
+
+#mainbanner .content {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+#mainbanner .content h2,
+#mainbanner .content p {
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#mainbanner .content h2 {
+  font-size: 67px;
+  letter-spacing: -6px;
+  opacity: 0;
+  animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+#mainbanner .content p {
+  font-size: 30px;
+  opacity: 0;
+  animation: showcontent .9s ease-in-out 1 forwards;
+
+}
+
+@keyframes showcontent {
+  form {
+      opacity: 0;
+      transform: translateY(100px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+
   }
 }

@@ -7,7 +7,7 @@ import { festivalObj, tourisObj } from "./js/commonData"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hd from "./component/bine/Hd"
 import MainBanner from "./component/bine/MainBanner"
-import db from "./data/datas.json"
+
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
 
     <>
       <Hd></Hd>
-      <MainBanner datasrc={db.swiperMain}></MainBanner>
+      <MainBanner></MainBanner>
 
 
       <div id="App" style={wrap}>
