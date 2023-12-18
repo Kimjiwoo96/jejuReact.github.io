@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 export default () => {
   return (
     <div id='mainbanner'>
+
       <Swiper
         className='position-relative'
         modules={[Navigation, Pagination, Autoplay]}
