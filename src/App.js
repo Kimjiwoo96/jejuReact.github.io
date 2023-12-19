@@ -2,11 +2,12 @@
 
 
 // 파일 import
-import {festivalObj , tourisObj ,eventObj} from "./js/commonData"
+import {festivalObj , tourisObj ,eventObj} from "./js/commonData";
 import Festival_P from "./pages/Festival_P";
 import Event_P from "./pages/Event_P";
 import Video_P from "./pages/Video_p";
-import Place_P from "./pages/Place_P";
+import Place_P from "./pages/Place_P"; 
+import QuickBtn from "./component/kjw/QuickBtn";
 
 
 function App() {
@@ -15,7 +16,14 @@ function App() {
 
   return (
     <div id="App" style={wrap}>
-      <Festival_P
+
+      <QuickBtn
+        quickText = {"신청하기"}
+        test = {"이렇게도 되나?????"}
+      ></QuickBtn>
+
+
+      <Festival_P 
         commonData={festivalObj}
       ></Festival_P>
       <Place_P></Place_P>
@@ -28,3 +36,4 @@ function App() {
 }
 
 export default App;
+ 

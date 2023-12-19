@@ -4,7 +4,6 @@ import FestivalStyles from "../../scss/kjw/Festival.module.scss";
 
 function Festival(commonData){
 
-    console.log(">>>>",commonData.commonData)
 
     return(
         <>
