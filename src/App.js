@@ -7,7 +7,7 @@ import { festivalObj, tourisObj } from "./js/commonData"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hd from "./component/bine/Hd"
 import MainBanner from "./component/bine/MainBanner"
-import ApplyForm from "./component/bine/ApplyForm"
+
 
 
 function App() {
@@ -19,9 +19,7 @@ function App() {
 
     <>
       <Hd></Hd>
-      <MainBanner>
-        <ApplyForm></ApplyForm>
-      </MainBanner>
+      <MainBanner></MainBanner>
 
 
       <div id="App" style={wrap}>
