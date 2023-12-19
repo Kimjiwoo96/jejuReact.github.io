@@ -1,7 +1,7 @@
 // module 
 import { useState } from "react";
 // 파일 import
-import EventStyles from "../../scss/kjw/Event.module.scss";
+import eventStyles from "../../scss/kjw/event.module.scss";
 
 
 function Event(Eventdata){
@@ -14,12 +14,12 @@ function Event(Eventdata){
     return(
         <>
 
-        <div className={EventStyles.eventWrap}>
+        <div className={eventStyles.eventWrap}>
              {
                 Eventdata.Eventdata.Eventdata.map((el,idx) => {
                     return(
                     <div 
-                    className={`${EventStyles.innerDiv} hoverStyle${idx+1}`}
+                    className={`${eventStyles.innerDiv} hoverStyle${idx+1}`}
                     key={`event ${idx}`}
                     onMouseOver={() => setIsHovering(idx+1)}
                     onMouseOut={() => setIsHovering(0)}
