@@ -115,12 +115,13 @@ li {
   margin: 0 auto;
 }
 
-.btns .swiper-pagination {
+ .swiper-pagination {
   align-items: center;
   margin-right: 1rem;
+  
 }
 
-#mainbanner .btns .swiper-pagination-bullet {
+#mainbanner .swiper-pagination-bullet {
   border-radius: 0;
   width: 50px;
   margin: 0;
@@ -128,9 +129,12 @@ li {
   height: 10px;
   opacity: 1;
   background-color: transparent;
+
+  
+
 }
 
-#mainbanner .btns .swiper-pagination-bullet::before {
+#mainbanner .swiper-pagination-bullet::before {
   content: "";
   display: block;
   position: absolute;
@@ -144,11 +148,11 @@ li {
 }
 
 
-#mainbanner .btns .swiper-pagination-bullet-active {
+#mainbanner .swiper-pagination-bullet-active {
   background-color: transparent;
 }
 
-#mainbanner .btns .swiper-pagination-bullet-active::before {
+#mainbanner .swiper-pagination-bullet-active::before {
   height: 3px;
 }
 
@@ -165,6 +169,7 @@ li {
 #mainbanner .swiper-button-prev:after {
   color: white;
   font-size: 18px;
+  z-index: 10000;
 }
 
 /*  타이틀  */
