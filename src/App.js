@@ -19,7 +19,6 @@ function App() {
 
       <QuickBtn
         quickText = {"신청하기"}
-        test = {"이렇게도 되나?????"}
       ></QuickBtn>
 
 

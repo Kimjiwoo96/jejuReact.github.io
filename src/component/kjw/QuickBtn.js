@@ -2,10 +2,7 @@ import React from 'react'
 
 function QuickBtn({
     quickText,
-    test
 }) {
-
-   console.log(">>>>>>>>>>>>",quickText)
 
 
     
