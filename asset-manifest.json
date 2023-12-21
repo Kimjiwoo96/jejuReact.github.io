@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jejuReact.github.io/static/css/main.146449db.css",
+    "main.js": "/jejuReact.github.io/static/js/main.ce4fcedf.js",
+    "index.html": "/jejuReact.github.io/index.html",
+    "main.146449db.css.map": "/jejuReact.github.io/static/css/main.146449db.css.map",
+    "main.ce4fcedf.js.map": "/jejuReact.github.io/static/js/main.ce4fcedf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.146449db.css",
+    "static/js/main.ce4fcedf.js"
+  ]
+}
