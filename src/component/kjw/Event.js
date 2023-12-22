@@ -1,7 +1,7 @@
 // module 
 import { useState } from "react";
 // 파일 import
-import eventStyles from "../../scss/kjw/event.module.scss";
+import eventStyles from "../../scss/kjw/Event.module.scss";
 
 
 function Event(Eventdata){
