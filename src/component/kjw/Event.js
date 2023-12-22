@@ -11,7 +11,6 @@ function Event(Eventdata){
 
     return(
         <>
-
         <div className={eventStyles.eventWrap}>
              {
                 Eventdata.Eventdata.Eventdata.map((el,idx) => {
