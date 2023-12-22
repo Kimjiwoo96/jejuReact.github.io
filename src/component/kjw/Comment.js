@@ -13,8 +13,7 @@ function Comment(){
                         <textarea name="" id="" cols="30" rows="10" placeholder="내용을 적어주세요"></textarea>
                         <button>등록</button>
                     </div>
-                </form>
-                
+                </form>  
             </div>
         </>
     );
