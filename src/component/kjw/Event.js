@@ -7,8 +7,6 @@ import eventStyles from "../../scss/kjw/event.module.scss";
 function Event(Eventdata){
 
     const [isHovering, setIsHovering] = useState(0);
-    // console.log("이거야>>>>>",isHovering)
-
 
 
     return(
