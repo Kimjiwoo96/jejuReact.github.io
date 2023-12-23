@@ -15,7 +15,6 @@ function Comment(){
 
     const nicknameChange = (event) => {
         setNicknameValue(event.target.value);
-        setcommentConText(event.target.value);
       }
 
       const commentConTextChange = (event) => {
