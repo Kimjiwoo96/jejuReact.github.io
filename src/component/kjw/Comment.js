@@ -9,7 +9,7 @@ function Comment(){
     function commentRegistration(){
         console.log("이거를 DB로 넘겨주면 됨>>>>>>",nicknameValue)
         console.log("DB로 넘겨주면 됨>>>>>>",commentConText)
-        alert("잘 나오나???")
+        alert("댓글 value가 잘들어왔는지 console을 확인해")
         
     }
 
