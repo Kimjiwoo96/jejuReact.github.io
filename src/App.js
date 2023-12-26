@@ -8,6 +8,7 @@ import Event_P from "./pages/Event_P";
 import Video_P from "./pages/Video_p";
 import Place_P from "./pages/Place_P"; 
 import QuickBtn from "./component/kjw/QuickBtn";
+import Comment_P from "./pages/Comment_P";
 
 //bine 작업
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -37,6 +38,8 @@ function App() {
       <Event_P
         Eventdata={eventObj}
       ></Event_P>
+
+      <Comment_P></Comment_P>
 
     </>
 

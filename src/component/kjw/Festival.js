@@ -7,6 +7,7 @@ function Festival(commonData){
 
     return(
         <>
+        
             <div className={FestivalStyles.festivalWrap}>
                 {
                     commonData.commonData.map((el, idx) => {
